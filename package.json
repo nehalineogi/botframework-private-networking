@@ -1,0 +1,20 @@
+{
+  "name": "hexaware-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.mjs",
+    "build": "cd frontend && npm install && npm run build",
+    "install-all": "npm install && cd frontend && npm install",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "dotenv": "^10.0.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
